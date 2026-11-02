@@ -160,7 +160,8 @@ textarea:focus,input[type=date]:focus{outline:none;border-color:rgba(242,238,230
 @media (max-width:600px){.log th:nth-child(2),.log td:nth-child(2){display:none}}
 
 /* the site's light section, used once */
-section.paper{background:var(--paper);color:#161616}
+section.paper{background:linear-gradient(90deg,transparent calc(50% - 2px),rgba(0,0,0,.1) calc(50% - 2px),rgba(0,0,0,.1) calc(50% - 1px),transparent calc(50% - 1px),transparent calc(50% + 1px),rgba(0,0,0,.1) calc(50% + 1px),rgba(0,0,0,.1) calc(50% + 2px),transparent calc(50% + 2px)),var(--paper);color:#161616}
+@media (max-width:479px){section.paper{background:var(--paper)}}
 section.paper h2{color:#161616}
 section.paper .tag{color:var(--red)}
 .priv{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(0,0,0,.1)}
