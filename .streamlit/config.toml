@@ -1,0 +1,18 @@
+[browser]
+# Keep usage statistics on this machine.
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+headless = true
+address = "127.0.0.1"
+
+[theme]
+base = "dark"
+primaryColor = "#B5121B"
+backgroundColor = "#0A0A0A"
+secondaryBackgroundColor = "#161616"
+textColor = "#F2EEE6"
+font = "sans serif"
