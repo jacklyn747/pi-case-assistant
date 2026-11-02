@@ -4,6 +4,8 @@ A private AI assistant for a personal injury law firm that runs entirely on the 
 
 No client data goes to an outside AI company. The model, the search index and the audit log all live on the machine it runs on.
 
+**[Try the live demo →](https://jacklyn747.github.io/pi-case-assistant/)** It runs entirely in your browser.
+
 > Everything in `knowledge_base/` is fictional: the firm, the clients, the identifiers and the medical details. Not legal advice.
 
 ## Why it exists
@@ -73,6 +75,14 @@ pytest
 ```
 
 Covers redaction, deadline math (including leap years and weekend rollover), the local-only guard, matter isolation and audit logging. The tests use stand-in models, so they run anywhere.
+
+## The browser demo
+
+`docs/index.html` is a self-contained version for showing the project to people. It embeds the same knowledge base and runs the same redaction patterns, deadline rules and matter scoping in JavaScript, with keyword search standing in for embeddings. Nothing typed into it leaves the browser. Rebuild it after changing the knowledge base:
+
+```bash
+python scripts/build_demo.py
+```
 
 ## How it's built
 
